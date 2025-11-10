@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beranda</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+  </head>
+  <body>
+    <header>
+      <h1>Selamat Datang {{ nama or 'Pengunjung' }}</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="/">Beranda</a>
+          </li>
+          <li>
+            <a href="/profil">Profil</a>
+          </li>
+          <li>
+            <a href="/login">Login</a>
+          </li>
+          <li>
+            <a href="/user/Iqbal">User</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </body>
+</html>

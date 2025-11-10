@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="login-body">
+    <div class="login-box">
+        <h1>Silakan Login</h1>
+        <form action="/login" method="post">
+            <label>Masukkan Nama:</label>
+            <input type="text" name="Nama" placeholder="Nama Anda" required>
+
+            <label>Masukkan Email:</label>
+            <input type="email" name="Email" placeholder="Email Anda" required>
+
+            <label>Masukkan Password:</label>
+            <input type="password" name="Password" placeholder="Password" required>
+
+            <button type="submit" class="btn">Login</button>
+        </form>
+    </div>
+</body>
+</html>
